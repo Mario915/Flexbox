@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+   display: flex;
+   flex-direction: row;
+   /**
+   _______O display flex é uma das melhores formas de manipular objetos dentro
+   uma página web.________
+
+   ::::::Este flex-direction indica que os elementos da página vão ficar em
+   ou seja um em cima do outro.
+   flex-direction: column;:::::::::::
+   
+   :::::::
+   Já o flex-direction: row; ele ficará um do lado do outro.
+   :::::::
+   **/
+   /**
+   flex-wrap: wrap; 
+
+   O flex wrap define se os itens são quebrados na mesma linha ou pode ser
+   quebradas em varias linhas.
+
+   Exemplo: Na class abaixo (.child) existe um width de 50% caso no elemento 
+   pai não tivesse o flex-wrap:wrap, os elementos não iriam seguir o que o 
+   elemento filho está sugerindo.    
+   **/
+   justify-content: space-around;
+}
+
+.child {
+    width: 20%;
+    height: 200px;
+    background-color: red;
+    border: 1px solid black;
+}
